@@ -1,0 +1,95 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title Content Manager
+
+    link(rel="icon", href= records.site.sitedata[0].icon, type="image/*")
+    link(rel="shortcut icon", href= records.site.sitedata[0].icon, type="img/*")
+
+    link(rel="stylesheet", href="//cms.netlify.com/assets/cms.css")
+    link(rel="stylesheet", href="/css/skel.css")
+    link(rel="stylesheet", href="/css/style.css")
+    link(rel="stylesheet", href="/css/style-desktop.css")
+    link(rel="stylesheet", href="/css/webriq-template.css")
+
+
+    style.
+      .container {
+        width: auto;
+        max-width: 1200px;
+      }
+      body.ember-application .cms-list-entry,
+      body.ember-application .cms-preview-pane {
+        background: #fff;
+      }
+    script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
+
+    base(href="/admin/")
+  body
+
+
+
+    script(type="text/x-handlebars" data-template-name='cms/preview/pages').
+      <div id="main-wrapper">
+        <div class="container">
+          <!--Content-->
+          <article class="box post">
+            {{#if entry.banner }}
+            {{cms-preview field='banner'}}
+            {{/if}}
+            <header>
+              <h2>{{ entry.title }}</h2>
+            </header>
+            {{cms-preview field='body'}}
+          </article>
+        </div>
+      </div>
+
+    script(type="text/x-handlebars" data-template-name='cms/preview/result').
+          <div id="main-wrapper">
+          <div class="container">
+          <h1>Menu Items</h1>
+          <hr>
+          <ul class="menu-preview">
+          {{#cms-preview field="result" as |results| }}
+            <li><a href="{{results.url}}">{{results.item}}</a></li>
+          {{/cms-preview}}
+          </ul>
+          </div>
+          </div>
+
+
+    script(type="text/x-handlebars" data-template-name='cms/preview/sitedata').
+      <div id="main-wrapper">
+        <div class="container">
+            <h1>Website Information</h1>
+            <hr>
+          {{#cms-preview field="sitedata" as |sitedatas| }}
+            <h4>Favicon</h4>
+            <p>{{{cms-preview field="icon" from=sitedatas}}}</p>
+            <h4>Logo</h4>
+            <p>{{cms-preview field="logo" from=sitedatas}}</p>
+            <h4>Website Name</h4>
+            <p>{{sitedatas.sitename}}</p>
+            <h4>Meta Description</h4>
+            <p>{{sitedatas.sitename}}</p>
+            <h4>Meta Author</h4>
+            <p>{{sitedatas.metauthor}}</p>
+            <h4>Meta Keywords</h4>
+            <p>{{sitedatas.metakeyword}}</p>
+            <h4>Copyright Text</h4>
+            <p>{{sitedatas.footer}}</p>
+
+          {{/cms-preview}}
+        </div>
+      </div>
+
+
+
+
+    script(src="//cms.netlify.com/assets/vendor.js")
+    script(src="//cms.netlify.com/assets/cms.js")
+    script(src="/js/custom-admin.js")

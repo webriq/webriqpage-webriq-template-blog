@@ -1,0 +1,63 @@
+section#contact
+	div.container
+		div.row
+			div.col-md-5.col-lg-5
+				h3 About Us
+				br
+				p Usu fabulas sententiae incorrupte an. Commodo epicurei in vel, malorum pertinacia ne sea, eam possim fabellas expetenda in. Id his saepe repudiandae, assum perpetua te mea. Vix aliquip graecis omittam ei, nec oratio definiebas id. Nec facilis perfecto ei.
+
+			div.col-md-3.col-lg-2
+				h3 Quick Links
+				br
+				ul
+					li
+						a(href="/") Home
+					li
+						a(href="page/about-us") About Us
+
+			div.col-md-4.col-lg-5
+				h3 Contact Information
+				br
+				ul
+					li
+						a(href="#") Address: This is your location
+					li
+						a(href="#") Phone: (07) 4565 678
+					li
+						a(href="#") Email: info@demosite.com
+					li
+						a(href="#") Website: www.demosite.com
+section#copyright
+	div.container
+		div.row
+			div.col-lg-12
+				p= records.site.sitedata[0].footer
+
+
+	!= js()
+	<!-- jQuery -->
+	script(src="../js/jquery.js")
+	script(src="../js/modernizr.custom.js")
+	<!-- Bootstrap Core JavaScript -->
+	script(src="../js/bootstrap.min.js")
+
+	<!-- Plugin JavaScript -->
+
+	script(src="../js/jquery.easing.min.js")
+	script(src="../js/jquery.countTo.js")
+	script(src="../js/jquery.fittext.js")
+	script(src="../js/wow.min.js")
+
+
+	<!-- Custom Theme JavaScript -->
+	script(src="../js/jquery.imagesloaded.min.js")
+	script(src="../js/cbpBGSlideshow.min.js")
+	script(src="../js/owl.carousel.min.js")
+	script(src="//res.cloudinary.com/webriq-pte/raw/upload/v1417678832/js/parallax.js")
+	script(src="../js/creative.js")
+
+	<!-- Google Analytics -->
+	script(type="text/javascript")
+		!= records.site.sitedata[0].analytics
+
+
