@@ -16,7 +16,7 @@ html
     link(rel="stylesheet", href="../css/style.css")
 
 
-    script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
+    script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "production") + "\";"
 
     base(href="/admin/")
   body
