@@ -4,8 +4,6 @@ html
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-
     title Content Manager
 
     link(rel="icon", href= records.site.sitedata[0].icon, type="image/*")
@@ -16,7 +14,8 @@ html
     link(rel="stylesheet", href="../css/style.css")
 
 
-    script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "production") + "\";"
+    script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 
     base(href="/admin/")
   body
