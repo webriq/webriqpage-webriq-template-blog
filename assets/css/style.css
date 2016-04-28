@@ -15,11 +15,30 @@
 		display:none;
 	}
 */
-	body
-	{
-		background: #252122;
-		/* background-image: url('images/bg02.png'); */
-	}
+
+	/**Menu Icons**/
+
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/sitedata"]::before {
+	  content: "\f013" !important;}
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/menus"]::before {
+	  content: "\f0c9"; }
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/pages"]::before {
+	  content: "\f0f6"; }
+
+	/**Menu Icons End Here**/
+
+	.main-container {
+    width: auto;
+    max-width: 1200px;
+    padding:20px;
+}
+  body.ember-application .cms-list-entry,
+  body.ember-application .cms-preview-pane {
+    background: #fff;
+  }
 
 	body.ember-application .cms-text{
 	  font: 16px/1.75em 'Open sans', Arial, Sans serif;
