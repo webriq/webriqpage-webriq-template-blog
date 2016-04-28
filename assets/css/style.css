@@ -30,6 +30,16 @@
 
 	/**Menu Icons End Here**/
 
+	.main-container {
+    width: auto;
+    max-width: 1200px;
+    padding:20px;
+}
+  body.ember-application .cms-list-entry,
+  body.ember-application .cms-preview-pane {
+    background: #fff;
+  }
+
 	body.ember-application .cms-text{
 	  font: 16px/1.75em 'Open sans', Arial, Sans serif;
 	  font-weight: 400;
