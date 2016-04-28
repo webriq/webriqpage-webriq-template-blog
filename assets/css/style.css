@@ -21,6 +21,20 @@
 		/* background-image: url('images/bg02.png'); */
 	}
 
+	/**Menu Icons**/
+
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/sitedata"]::before {
+	  content: "\f013" !important;}
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/menus"]::before {
+	  content: "\f0c9"; }
+
+	#left_col-2 ul.cms.cms-nav-menu li a[href="#/collections/pages"]::before {
+	  content: "\f0f6"; }
+
+	/**Menu Icons End Here**/
+
 	body.ember-application .cms-text{
 	  font: 16px/1.75em 'Open sans', Arial, Sans serif;
 	  font-weight: 400;
