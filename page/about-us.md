@@ -1,7 +1,6 @@
 ---
 title: About Us
 cmsUserSlug: about-us
-banner:
 date: 2014-04-21T18:33:00+08:00
 categories: ""
 ---
