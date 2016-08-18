@@ -6,7 +6,7 @@ This is a simple example of how to integrate Webriq CMS with a roots based site.
 
 * Install [node](https://nodejs.org/en/) application in your system.
 
-* Install [roots](http://roots.cx/articles/getting-started) in your system globally `npm i roots -g` if you don't install it before.
+* Install [roots](http://roots.cx/articles/getting-started) in your system globally `npm i roots -g` if you haven't done this before.
 
 * Make sure to install the [netlify-git-api](https://github.com/webriq/netlify-git-api) before you start.
 
