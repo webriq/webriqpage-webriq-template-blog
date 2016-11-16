@@ -29,14 +29,18 @@
 	  content: "\f0f6"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(4) a::before  {
-	  content: "\f24d"; }
+	  content: "\f114"; }
+
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(5) a::before  {
-	  content: "\f1ea"; }
+	  content: "\f24d"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(6) a::before  {
-	  content: "\f044"; }
+	  content: "\f1ea"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(7) a::before  {
+	  content: "\f044"; }
+
+	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(8) a::before  {
 	  content: "\f0c0"; }
 
 	/**Menu Icons End Here**/
