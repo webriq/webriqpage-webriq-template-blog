@@ -24,6 +24,7 @@ module.exports =
     records(
       menu: { file: "data/menu.json" }
       site: { file: "data/site.json" }
+      files: { file: "data/files.json" }
     ),
     collections(folder: 'posts', layout: 'post'),
     collections(folder: 'page', layout: 'post'),
