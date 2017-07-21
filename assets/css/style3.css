@@ -710,6 +710,9 @@
 #blogsection {
 	padding:50px 0px 0px;
 }
+#blogsection .col-md-4 h1 {
+	font-size:22px;
+}
 #blogsection .tleblog{
 	font-size:46px;
 	font-family:"Roboto", sans-serif;

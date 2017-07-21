@@ -5,7 +5,7 @@ author: Bob Wotherspoon
 leadtag: blog
 thumbnail: /img/blog/buzzinuk.jpg
 banner: /img/blog/featured/buzzinuk.jpg
-shortdesc: "For many people in the modern economy the opportunity to have permanent and reliable employment is becoming more and more unrealistic. For many people in the modern economy the opportunity to have permanent and reliable employment is becoming more and more unrealistic. "
+shortdesc: "For many people in the modern economy the opportunity to have permanent and reliable employment..."
 updatedDate: 2017-07-19T04:37:06.304Z
 cmsUserSlug: ""
 date: 2017-07-19T00:00:00.000Z
