@@ -6,3 +6,4 @@ node_modules/
 public/
 .deploy*/
 .users.yml
+feed.xml

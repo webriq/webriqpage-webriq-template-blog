@@ -1,3 +1,321 @@
-extends layout
+extends layout-new
 
 block content
+    //- #home-bob-about
+    //-     .container
+    //-         h1.ttle.text-center ABOUT
+    //-         .row
+    //-             .col-md-4.col-sm-4.col-xs-4.leftabout.text-center
+    //-                 img(src="../img/bob/bob-bio-img].png")
+    //-                 p.detabout
+    //-                     | Website Design & Hosting 
+    //-                     i.fa.fa-check(aria-hidden='true')
+    //-                     | Inbound Marketing 
+    //-                     i.fa.fa-check(aria-hidden='true')
+    //-                     | Digital Marketing 
+    //-                     i.fa.fa-check(aria-hidden='true')
+    //-                     | Buzzin Community Websites
+    //-                 h6 FOLLOW ME
+    //-                 ul.list-unstyled.list-inline
+    //-                     li.facebook
+    //-                         a(href="https://www.facebook.com/" + records.config.about[0].facebook, target="_blank")
+    //-                             svg(xmlns='http://www.w3.org/2000/svg', width='34', height='34', viewbox='0 0 612 612')
+    //-                                 path(d='M612 306C612 137.004 474.995 0 306 0 137.004 0 0 137.004 0 306c0 168.995 137.004 306 306 306 168.995 0 306-137.005 306-306zm-584.182 0C27.818 152.36 152.36 27.818 306 27.818S584.182 152.36 584.182 306 459.64 584.182 306 584.182 27.818 459.64 27.818 306z')
+    //-                                 path(d='M317.74 482.617V306h58.278l9.208-58.53H317.74v-29.347c0-15.272 5.006-29.85 26.927-29.85h43.813v-58.417h-62.2c-52.3 0-66.57 34.438-66.57 82.175v35.414h-35.885V306h35.885v176.617h58.03z')
+    //-                     li.twitter
+    //-                         a(href="https://twitter.com/" + records.config.about[0].twitter, target="_blank")
+    //-                             svg(xmlns='http://www.w3.org/2000/svg', width='34', height='34', viewbox='0 0 612 612')
+    //-                                 path(d='M437.22 245.162c0-3.088-.057-6.148-.196-9.18 13.214-9.848 24.675-22.17 33.744-36.275-12.13 5.453-25.148 9.097-38.835 10.626 13.965-8.596 24.675-22.338 29.738-38.834-13.074 7.927-27.54 13.602-42.923 16.55-12.323-14.02-29.904-22.95-49.35-23.283-37.332-.612-67.598 30.934-67.598 70.463 0 5.62.583 11.072 1.75 16.33-56.22-3.617-106.04-32.882-139.368-77-5.814 10.57-9.152 22.92-9.152 36.163 0 25.037 11.934 47.29 30.07 60.42-11.098-.5-21.502-3.865-30.626-9.374v.917c0 34.996 23.312 64.316 54.245 71.16-5.676 1.612-11.657 2.447-17.805 2.42-4.367-.028-8.596-.5-12.713-1.392 8.596 28.68 33.577 49.628 63.147 50.323-23.146 19.194-52.3 30.655-83.956 30.572-5.453 0-10.85-.36-16.135-1.03 29.932 20.53 65.455 32.492 103.65 32.492 124.32.03 192.31-108.184 192.31-202.07z')
+    //-                                 path(d='M612 306C612 137.004 474.995 0 306 0 137.004 0 0 137.004 0 306c0 168.995 137.004 306 306 306 168.995 0 306-137.005 306-306zm-584.182 0C27.818 152.36 152.36 27.818 306 27.818S584.182 152.36 584.182 306 459.64 584.182 306 584.182 27.818 459.64 27.818 306z')
+    //-                     li.pinterest
+    //-                         a(href="https://www.linkedin.com/in/" + records.config.about[0].linkedin, target="_blank")
+    //-                             //- svg(xmlns='http://www.w3.org/2000/svg', width='34', height='34', viewbox='0 0 31.059 31.059')
+    //-                             //-     path(d='M15.53 31.06C6.965 31.06 0 24.09 0 15.53S6.966 0 15.53 0c8.562 0 15.528 6.967 15.528 15.53s-6.966 15.53-15.53 15.53zm0-29.285c-7.586 0-13.756 6.17-13.756 13.754 0 7.583 6.17 13.754 13.755 13.754 7.583 0 13.753-6.17 13.753-13.755 0-7.585-6.17-13.755-13.754-13.755z')
+    //-                             //-     path(d='M12.75 24.944c-.078 0-.156-.01-.234-.028-.523-.13-.842-.656-.713-1.178l2.27-9.24c.13-.52.652-.84 1.174-.715.52.125.843.646.72 1.168-.122.54-.337 2.26.282 3.036.145.184.417.428 1.096.428 1.434 0 2.95-2.326 2.95-4.524 0-.714-.16-1.727-.924-2.49-.745-.747-1.915-1.124-3.48-1.124-4.134 0-4.926 2.61-5.07 3.41-.222 1.234.215 2.43.994 2.72.505.188.762.75.573 1.253-.19.503-.75.76-1.253.57-1.69-.628-2.63-2.685-2.232-4.89.416-2.312 2.496-5.013 6.988-5.013 2.1 0 3.733.57 4.857 1.694.978.98 1.495 2.317 1.495 3.87 0 3.055-2.095 6.47-4.9 6.47-1.245 0-2.013-.497-2.465-.98l-1.185 4.823c-.11.443-.51.74-.946.74z')
+
+    //-                             // Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)
+    //-                             svg#Capa_1(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', version='1.1', x='0px', y='0px', viewbox='0 0 314.652 314.652', style='enable-background:new 0 0 314.652 314.652;', xml:space='preserve', width='34px', height='34px')
+    //-                               g
+    //-                                 path(d='M157.326,0C70.576,0,0,70.576,0,157.326s70.576,157.326,157.326,157.326s157.326-70.576,157.326-157.326   S244.076,0,157.326,0z M157.326,296.652C80.501,296.652,18,234.15,18,157.326S80.501,18,157.326,18s139.326,62.502,139.326,139.326   S234.151,296.652,157.326,296.652z', fill='#0e76a8')
+    //-                                 path(d='M112.326,121.119c-4.971,0-9,4.029-9,9v74.414c0,4.971,4.029,9,9,9s9-4.029,9-9v-74.414   C121.326,125.148,117.297,121.119,112.326,121.119z', fill='#0e76a8')
+    //-                                 path(d='M112.326,79.116c-2.37,0-4.69,0.96-6.36,2.64c-1.68,1.67-2.64,3.99-2.64,6.36s0.96,4.689,2.64,6.37   c1.67,1.67,3.99,2.63,6.36,2.63c2.37,0,4.69-0.96,6.36-2.63c1.68-1.681,2.64-4,2.64-6.37s-0.96-4.69-2.64-6.36   C117.016,80.076,114.696,79.116,112.326,79.116z', fill='#0e76a8')
+    //-                                 path(d='M190.076,128.119c-9.42,0-18.139,3.036-25.25,8.169v-6.169c0-4.971-4.029-9-9-9s-9,4.029-9,9v74.414c0,4.971,4.029,9,9,9   s9-4.029,9-9v-33.164c0-13.923,11.327-25.25,25.25-25.25s25.25,11.327,25.25,25.25v35.164c0,4.971,4.029,9,9,9s9-4.029,9-9v-35.164   C233.326,147.521,213.924,128.119,190.076,128.119z', fill='#0e76a8')
+
+
+    //-             .col-md-7.col-sm-7.col-xs-7.rightabout.text-left.pull-right
+    //-                 h1 Bob Wotherspoon
+    //-                 p.det
+    //-                     | As an experienced business development and marketing consultant I understand that the lifeblood of many businesses is to find new customers and to drive sales as well as revenue.
+    //-                     br
+    //-                     br
+    //-                     | My core sales, business development, strategic planning and relationship management skills were established, developed and finely honed over many years within leading UK FTSE 100 and International companies. I also understand the sales cycle and the absolute need to ensure a strong Return on Investment when deciding on where and how to utilise marketing spend.
+    //-                     br
+    //-                     br
+    //-                     | Now working as an agent for a number of carefully selected business partners my key focus is to provide small and medium sized businesses with a range of products and services to help them raise the awareness and credibility of their business in their local market as well as connect with their targeted audience and most importantly convert prospects to new customers.
+
+
+
+    //- #unique_approach
+    //-   .container
+    //-     .unique-bg-container
+    //-     .row
+    //-       .col-md-6.col-sm-6.col-xs-6.rightunique.titleunique.text-left
+    //-         h4 UNIQUE
+    //-         h1 Customer Approach
+    //-       .col-md-6.col-sm-6.col-xs-6.rightunique.text-left.pull-right
+
+    //-         div.det
+    //-           p Top Insights
+    //-           ul.list
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | Small business marketing is a lonely job for 50% of business owners
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | Following up with leads and customers is also a tough task
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | Web and Digital Marketing is far from universal in the small business world
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | Web and Digital Marketing Stack used by small businesses is fairly unsophisticated
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | Analyzing and tracking return on web and digital marketing investments is a major struggle
+    //-             li 
+    //-               i.fa.fa-check-circle(aria-hidden='true')
+    //-               | 58% of small business owners are using social media, but less then 50% of them are creating any other content, such as blogs to get leads.
+
+    //-         p.highlight
+    //-           | Together we make the small marketing job less lonely. With a set of well-defined Templates we plan and deliver a customer's
+
+    //-         p If you are looking explore ways of strengthening your brand or formulating and executing a marketing plan to maximise your sales then contact me today for an initial no obligation consultation.
+
+    //- #services
+    //-   .container
+    //-     h1.text-center SERVICES
+    //-     .row
+    //-       .col-md-4.col-sm-4.col-xs-4.leftservices.text-center
+    //-         img(src="../img/bob/serv1.png")
+    //-         h3 Website design and build
+    //-         p To maximise your on-line presence and exposure it is vital to have a website that not only to showcases your products..
+    //-         .btnserv
+    //-           a(href="/website-design-build.html") 
+    //-             i.fa.fa-arrow-circle-o-right(aria-hidden='true')
+    //-             | Learn More
+    //-       .col-md-4.col-sm-4.col-xs-4.centerservices.text-center
+    //-         img(src="../img/bob/serv2.png")
+    //-         h3 Digital and Social Media Marketing Services
+    //-         p This is where the real action is and opportunity lies to connect with your audience on-line..
+    //-         .btnserv
+    //-           a(href="/digital-and-social-media-marketing-services.html") 
+    //-             i.fa.fa-arrow-circle-o-right(aria-hidden='true')
+    //-             | Learn More
+    //-       .col-md-4.col-sm-4.col-xs-4.rightservices.text-center
+    //-         img(src="../img/bob/serv3.png")
+    //-         h3 Business Advertising and Promotion 
+    //-         p Having a highly effective website with engaging and relevant content and connectivity to your preferred social media platforms..
+    //-         .btnserv
+    //-           a(href="/business-advertising-and-promotion.html") 
+    //-             i.fa.fa-arrow-circle-o-right(aria-hidden='true')
+    //-             | Learn More
+
+
+    //- #testimonials.hidden
+    //-   .container
+    //-     h1.text-center TESTIMONIALS
+    //-     .row
+    //-       .col-md-4.col-sm-4.col-xs-4.leftservices.text-left
+    //-         .quotetxt
+    //-           | "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at.""
+    //-         .quote-author
+    //-           ul
+    //-             li
+    //-               img(src="../img/bob/testimonail-thum.png")
+    //-             li
+    //-               h3 Bob Wotherspoon
+    //-               p Director, Sales Manager
+    //-       .col-md-4.col-sm-4.col-xs-4.centerservices.text-left
+    //-         .quotetxt
+    //-           | "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at.""
+    //-         .quote-author
+    //-           ul
+    //-             li
+    //-               img(src="../img/bob/testimonail-thum.png")
+    //-             li
+    //-               h3 Bob Wotherspoon
+    //-               p Director, Sales Manager
+    //-       .col-md-4.col-sm-4.col-xs-4.rightservices.text-left
+    //-         .quotetxt
+    //-           | "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at.""
+    //-         .quote-author
+    //-           ul
+    //-             li
+    //-               img(src="../img/bob/testimonail-thum.png")
+    //-             li
+    //-               h3 Bob Wotherspoon
+    //-               p Director, Sales Manager
+
+    #blogsection
+      .container
+        p.text-center.subblogttle TRENDING
+        h1.tleblog.text-center BLOG POST
+        .row
+          .col-md-8.firstpostvisible
+            .news-list
+              .row            
+                each item in sortBy(blog).slice(0,1)
+                  .col-md-12.col-sm-12.col-xs-12.itemblogsbob.fullimageblog
+                    .list.box-shadow
+
+                        // Item Thumbnail
+                        .list-thumbnail
+                            img.img-responsive(src=item.thumbnail)
+
+                        // Item Heading Info
+                        .list-heading
+                            .date
+                                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 511.634 511.634')
+                                    path(d='M482.513 83.942c-7.225-7.233-15.797-10.85-25.694-10.85h-36.542v-27.41c0-12.56-4.477-23.315-13.422-32.26C397.906 4.474 387.156 0 374.59 0h-18.267c-12.565 0-23.318 4.475-32.264 13.422-8.95 8.945-13.423 19.7-13.423 32.26v27.41h-109.63v-27.41c0-12.56-4.475-23.314-13.422-32.26C178.64 4.475 167.885 0 155.32 0h-18.27c-12.562 0-23.317 4.475-32.264 13.422-8.945 8.945-13.42 19.7-13.42 32.26v27.41H54.822c-9.9 0-18.464 3.618-25.697 10.85-7.233 7.233-10.85 15.8-10.85 25.698v365.453c0 9.89 3.617 18.456 10.85 25.693 7.232 7.23 15.796 10.85 25.697 10.85h401.99c9.896 0 18.47-3.618 25.693-10.85 7.234-7.234 10.852-15.804 10.852-25.693V109.64c0-9.9-3.615-18.465-10.845-25.698zM347.187 45.686c0-2.667.85-4.858 2.56-6.567 1.71-1.712 3.9-2.57 6.57-2.57h18.268c2.67 0 4.853.855 6.57 2.57 1.712 1.71 2.567 3.902 2.567 6.566v82.224c0 2.666-.855 4.853-2.567 6.567-1.718 1.71-3.9 2.568-6.57 2.568h-18.268c-2.67 0-4.86-.855-6.57-2.568-1.71-1.715-2.56-3.9-2.56-6.567V45.686zm-219.272 0c0-2.667.855-4.858 2.568-6.567 1.714-1.712 3.9-2.57 6.567-2.57h18.27c2.668 0 4.86.855 6.568 2.57 1.71 1.71 2.57 3.902 2.57 6.566v82.224c0 2.666-.855 4.856-2.57 6.567-1.713 1.71-3.9 2.568-6.567 2.568h-18.27c-2.666 0-4.856-.855-6.567-2.568-1.71-1.715-2.568-3.9-2.568-6.567V45.686zm328.897 429.402H54.822v-292.36h401.99v292.36z')
+
+                                =dateFormat(item.date, "dddd, LL")
+                            h1 
+                                a(href=item.permalink)= item.title                            
+                        
+
+                        //- // Item Description
+                        //- .list-description
+                        //-     p= item.shortdesc
+
+                        //- // Item Footer
+                        //- .list-footer
+                        //-     .read-more
+                        //-         a(href=item.permalink)
+                        //-             | Read more
+                        //-     .sharer
+
+          .col-md-4.frstpost.hidden
+            .news-list
+              .row            
+                each item in sortBy(blog).slice(0,1)
+                  .col-md-12.col-sm-12.col-xs-12.itemblogsbob
+                    .list.box-shadow
+
+                        // Item Thumbnail
+                        .list-thumbnail
+                            img.img-responsive(src=item.thumbnail)
+
+                        // Item Heading Info
+                        .list-heading
+                            h1 
+                                a(href=item.permalink)= item.title
+                            .author
+                                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 563.43 563.43')
+                                    path(d='M280.79 314.56c83.266 0 150.803-67.54 150.803-150.804S364.055 13.416 280.79 13.416s-150.803 67.537-150.803 150.34S197.524 314.56 280.79 314.56zm0-261.825c61.06 0 111.02 49.96 111.02 111.02s-49.96 111.02-111.02 111.02-111.02-49.958-111.02-111.02 49.958-111.02 111.02-111.02zM19.89 550.015h523.65c11.1 0 19.89-8.79 19.89-19.89 0-104.083-84.653-189.2-189.198-189.2H189.198C85.116 340.926 0 425.58 0 530.126c0 11.1 8.79 19.89 19.89 19.89zM189.2 380.708h185.034c75.864 0 138.313 56.436 148.028 129.524H41.17c9.714-72.625 72.164-129.524 148.028-129.524z')
+
+
+                                = item.author
+                            .date
+                                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 511.634 511.634')
+                                    path(d='M482.513 83.942c-7.225-7.233-15.797-10.85-25.694-10.85h-36.542v-27.41c0-12.56-4.477-23.315-13.422-32.26C397.906 4.474 387.156 0 374.59 0h-18.267c-12.565 0-23.318 4.475-32.264 13.422-8.95 8.945-13.423 19.7-13.423 32.26v27.41h-109.63v-27.41c0-12.56-4.475-23.314-13.422-32.26C178.64 4.475 167.885 0 155.32 0h-18.27c-12.562 0-23.317 4.475-32.264 13.422-8.945 8.945-13.42 19.7-13.42 32.26v27.41H54.822c-9.9 0-18.464 3.618-25.697 10.85-7.233 7.233-10.85 15.8-10.85 25.698v365.453c0 9.89 3.617 18.456 10.85 25.693 7.232 7.23 15.796 10.85 25.697 10.85h401.99c9.896 0 18.47-3.618 25.693-10.85 7.234-7.234 10.852-15.804 10.852-25.693V109.64c0-9.9-3.615-18.465-10.845-25.698zM347.187 45.686c0-2.667.85-4.858 2.56-6.567 1.71-1.712 3.9-2.57 6.57-2.57h18.268c2.67 0 4.853.855 6.57 2.57 1.712 1.71 2.567 3.902 2.567 6.566v82.224c0 2.666-.855 4.853-2.567 6.567-1.718 1.71-3.9 2.568-6.57 2.568h-18.268c-2.67 0-4.86-.855-6.57-2.568-1.71-1.715-2.56-3.9-2.56-6.567V45.686zm-219.272 0c0-2.667.855-4.858 2.568-6.567 1.714-1.712 3.9-2.57 6.567-2.57h18.27c2.668 0 4.86.855 6.568 2.57 1.71 1.71 2.57 3.902 2.57 6.566v82.224c0 2.666-.855 4.856-2.57 6.567-1.713 1.71-3.9 2.568-6.567 2.568h-18.27c-2.666 0-4.856-.855-6.567-2.568-1.71-1.715-2.568-3.9-2.568-6.567V45.686zm328.897 429.402H54.822v-292.36h401.99v292.36z')
+
+                                =dateFormat(item.date, "dddd, YYYY")                             
+                        
+
+                        // Item Description
+                        .list-description
+                            p= item.shortdesc
+
+                        // Item Footer
+                        .list-footer
+                            .read-more
+                                a(href=item.permalink)
+                                    | Read more
+                            .sharer
+
+          .col-md-4
+            .news-list
+              .row            
+                each item in sortBy(blog).slice(1,2)
+                  .col-md-12.col-sm-12.col-xs-12.itemblogsbob
+                    .list.box-shadow
+
+                        // Item Thumbnail
+                        .list-thumbnail
+                            img.img-responsive(src=item.thumbnail)
+
+                        // Item Heading Info
+                        .list-heading
+                            h1 
+                                a(href=item.permalink)= item.title
+                            .author
+                                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 563.43 563.43')
+                                    path(d='M280.79 314.56c83.266 0 150.803-67.54 150.803-150.804S364.055 13.416 280.79 13.416s-150.803 67.537-150.803 150.34S197.524 314.56 280.79 314.56zm0-261.825c61.06 0 111.02 49.96 111.02 111.02s-49.96 111.02-111.02 111.02-111.02-49.958-111.02-111.02 49.958-111.02 111.02-111.02zM19.89 550.015h523.65c11.1 0 19.89-8.79 19.89-19.89 0-104.083-84.653-189.2-189.198-189.2H189.198C85.116 340.926 0 425.58 0 530.126c0 11.1 8.79 19.89 19.89 19.89zM189.2 380.708h185.034c75.864 0 138.313 56.436 148.028 129.524H41.17c9.714-72.625 72.164-129.524 148.028-129.524z')
+
+
+                                = item.author
+                            .date
+                                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 511.634 511.634')
+                                    path(d='M482.513 83.942c-7.225-7.233-15.797-10.85-25.694-10.85h-36.542v-27.41c0-12.56-4.477-23.315-13.422-32.26C397.906 4.474 387.156 0 374.59 0h-18.267c-12.565 0-23.318 4.475-32.264 13.422-8.95 8.945-13.423 19.7-13.423 32.26v27.41h-109.63v-27.41c0-12.56-4.475-23.314-13.422-32.26C178.64 4.475 167.885 0 155.32 0h-18.27c-12.562 0-23.317 4.475-32.264 13.422-8.945 8.945-13.42 19.7-13.42 32.26v27.41H54.822c-9.9 0-18.464 3.618-25.697 10.85-7.233 7.233-10.85 15.8-10.85 25.698v365.453c0 9.89 3.617 18.456 10.85 25.693 7.232 7.23 15.796 10.85 25.697 10.85h401.99c9.896 0 18.47-3.618 25.693-10.85 7.234-7.234 10.852-15.804 10.852-25.693V109.64c0-9.9-3.615-18.465-10.845-25.698zM347.187 45.686c0-2.667.85-4.858 2.56-6.567 1.71-1.712 3.9-2.57 6.57-2.57h18.268c2.67 0 4.853.855 6.57 2.57 1.712 1.71 2.567 3.902 2.567 6.566v82.224c0 2.666-.855 4.853-2.567 6.567-1.718 1.71-3.9 2.568-6.57 2.568h-18.268c-2.67 0-4.86-.855-6.57-2.568-1.71-1.715-2.56-3.9-2.56-6.567V45.686zm-219.272 0c0-2.667.855-4.858 2.568-6.567 1.714-1.712 3.9-2.57 6.567-2.57h18.27c2.668 0 4.86.855 6.568 2.57 1.71 1.71 2.57 3.902 2.57 6.566v82.224c0 2.666-.855 4.856-2.57 6.567-1.713 1.71-3.9 2.568-6.567 2.568h-18.27c-2.666 0-4.856-.855-6.567-2.568-1.71-1.715-2.568-3.9-2.568-6.567V45.686zm328.897 429.402H54.822v-292.36h401.99v292.36z')
+
+                                =dateFormat(item.date, "dddd, YYYY")                             
+                        
+
+                        // Item Description
+                        .list-description
+                            p= item.shortdesc
+
+                        // Item Footer
+                        .list-footer
+                            .read-more
+                                a(href=item.permalink)
+                                    | Read more
+                            .sharer
+
+
+
+        .news-list
+          .row            
+            each item in sortBy(blog).slice(2,5)
+              .col-md-4.col-sm-4.col-xs-4.itemblogsbob
+                .list.box-shadow
+
+                    // Item Thumbnail
+                    .list-thumbnail
+                        img.img-responsive(src=item.thumbnail)
+
+                    // Item Heading Info
+                    .list-heading
+                        h1 
+                            a(href=item.permalink)= item.title
+                        .author
+                            svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 563.43 563.43')
+                                path(d='M280.79 314.56c83.266 0 150.803-67.54 150.803-150.804S364.055 13.416 280.79 13.416s-150.803 67.537-150.803 150.34S197.524 314.56 280.79 314.56zm0-261.825c61.06 0 111.02 49.96 111.02 111.02s-49.96 111.02-111.02 111.02-111.02-49.958-111.02-111.02 49.958-111.02 111.02-111.02zM19.89 550.015h523.65c11.1 0 19.89-8.79 19.89-19.89 0-104.083-84.653-189.2-189.198-189.2H189.198C85.116 340.926 0 425.58 0 530.126c0 11.1 8.79 19.89 19.89 19.89zM189.2 380.708h185.034c75.864 0 138.313 56.436 148.028 129.524H41.17c9.714-72.625 72.164-129.524 148.028-129.524z')
+
+
+                            = item.author
+                        .date
+                            svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 511.634 511.634')
+                                path(d='M482.513 83.942c-7.225-7.233-15.797-10.85-25.694-10.85h-36.542v-27.41c0-12.56-4.477-23.315-13.422-32.26C397.906 4.474 387.156 0 374.59 0h-18.267c-12.565 0-23.318 4.475-32.264 13.422-8.95 8.945-13.423 19.7-13.423 32.26v27.41h-109.63v-27.41c0-12.56-4.475-23.314-13.422-32.26C178.64 4.475 167.885 0 155.32 0h-18.27c-12.562 0-23.317 4.475-32.264 13.422-8.945 8.945-13.42 19.7-13.42 32.26v27.41H54.822c-9.9 0-18.464 3.618-25.697 10.85-7.233 7.233-10.85 15.8-10.85 25.698v365.453c0 9.89 3.617 18.456 10.85 25.693 7.232 7.23 15.796 10.85 25.697 10.85h401.99c9.896 0 18.47-3.618 25.693-10.85 7.234-7.234 10.852-15.804 10.852-25.693V109.64c0-9.9-3.615-18.465-10.845-25.698zM347.187 45.686c0-2.667.85-4.858 2.56-6.567 1.71-1.712 3.9-2.57 6.57-2.57h18.268c2.67 0 4.853.855 6.57 2.57 1.712 1.71 2.567 3.902 2.567 6.566v82.224c0 2.666-.855 4.853-2.567 6.567-1.718 1.71-3.9 2.568-6.57 2.568h-18.268c-2.67 0-4.86-.855-6.57-2.568-1.71-1.715-2.56-3.9-2.56-6.567V45.686zm-219.272 0c0-2.667.855-4.858 2.568-6.567 1.714-1.712 3.9-2.57 6.567-2.57h18.27c2.668 0 4.86.855 6.568 2.57 1.71 1.71 2.57 3.902 2.57 6.566v82.224c0 2.666-.855 4.856-2.57 6.567-1.713 1.71-3.9 2.568-6.567 2.568h-18.27c-2.666 0-4.856-.855-6.567-2.568-1.71-1.715-2.568-3.9-2.568-6.567V45.686zm328.897 429.402H54.822v-292.36h401.99v292.36z')
+
+                            =dateFormat(item.date, "dddd, YYYY")
+                    
+
+                    // Item Description
+                    .list-description
+                        p= item.shortdesc
+
+                    // Item Footer
+                    .list-footer
+                        .read-more
+                            a(href=item.permalink)
+                                | Read more
+                        .sharer
+
+
+        #more-blog.section.text-center
+            a.btn.btn-primary(href="/entries-webriq-blog.html")
+                | View more &nbsp;
+                i.fa.fa-long-arrow-right(aria-hidden='true')
+
+          

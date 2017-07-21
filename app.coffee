@@ -1,12 +1,21 @@
-axis         = require 'axis'
-rupture      = require 'rupture'
-autoprefixer = require 'autoprefixer-stylus'
-js_pipeline  = require 'js-pipeline'
-css_pipeline = require 'css-pipeline'
-records      = require 'roots-records'
-collections  = require 'roots-collections'
-excerpt      = require 'html-excerpt'
-moment       = require 'moment'
+fs               = require 'fs'
+axis             = require 'axis'
+rupture          = require 'rupture'
+autoprefixer     = require 'autoprefixer-stylus'
+js_pipeline      = require 'js-pipeline'
+css_pipeline     = require 'css-pipeline'
+records          = require 'roots-records'
+collections      = require 'roots-collections'
+excerpt          = require 'html-excerpt'
+moment           = require 'moment'
+cleanUrls        = require 'clean-urls'
+roots_config     = require 'roots-config'
+SitemapGenerator = require 'sitemap-generator'
+rssfeed          = require 'webriq-roots-rss-generator'
+orderBy          = require 'lodash.orderby'
+_                = require 'underscore'
+browserify   = require 'roots-browserify'
+
 
 monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 
@@ -18,18 +27,29 @@ module.exports =
       excerpt.text(html, length || 100, ellipsis || '...')
     dateFormat: (date, format) ->
       moment(date).format(format)
+    sortBy: (obj) ->
+      orderBy obj, ['date'], ['desc']
+    sortByFeatured: (obj) ->
+      orderBy obj, ['featured', 'date'], ['desc', 'desc']
 
 
   extensions: [
     records(
-      menu: { file: "data/menu.json" }
       site: { file: "data/site.json" }
       files: { file: "data/files.json" }
+      config: { file: "data/config.json" }
     ),
-    collections(folder: 'posts', layout: 'post'),
-    collections(folder: 'page', layout: 'post'),
+    collections(folder: 'blog', layout: 'blog'),
     js_pipeline(files: 'assets/js/*.coffee'),
-    css_pipeline(files: 'assets/css/*.styl')
+    css_pipeline(files: 'assets/css/*.styl'),
+    browserify(files: 'assets/js/main.js', out: '/js/bundle.js'),
+    rssfeed(
+      folder: "blog"
+      output: "feed.xml"
+      settings:
+        feed_url : "http://bobwotherspoon.buzzin.today/feed.xml"
+        site_url: "http://bobwotherspoon.buzzin.today/"
+      )
   ]
 
   stylus:

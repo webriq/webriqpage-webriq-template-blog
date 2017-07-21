@@ -4,18 +4,27 @@
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
     "axis": "0.5.x",
+    "clean-urls": "^1.1.5",
     "coffee-script": "^1.0.0",
     "css-pipeline": "0.3.x",
     "html-excerpt": "^0.1.0",
-    "jade": "^1.0.0",
+    "jade": "^1.11.0",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "^1.0.0",
-    "marked": "0.3.x",
+    "lodash.orderby": "^4.6.0",
+    "marked": "^0.3.6",
     "moment": "^2.10.6",
+    "request": "^2.81.0",
+    "roots": "4.0.1",
+    "roots-browserify": "^0.6.0",
     "roots-collections": "^0.3.0",
+    "roots-config": "0.0.2",
     "roots-records": "^0.5.1",
     "rupture": "0.6.x",
-    "stylus": "^0.54.5",
-    "roots": "4.0.1"
+    "sitemap-generator": "^4.1.1",
+    "sorty": "^1.2.2",
+    "stylus": "0.54.x",
+    "underscore": "^1.8.3",
+    "webriq-roots-rss-generator": "^2.0.0"
   }
 }

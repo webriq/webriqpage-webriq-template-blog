@@ -1,0 +1,206 @@
+section#copyright
+    div.container
+        div.row
+            div.col-md-6.behind.text-left
+                h4 About
+                p.det
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+            div.col-md-3.quicklnks.text-left
+                h4 Site Map
+                ul.lnks
+                  li
+                    a(href='#') Home
+                  li
+                    a(href='#') About
+                  li
+                    a(href='#') Information
+                  li
+                    a(href='#') Gallery
+                  li
+                    a(href='#') Blog
+
+
+
+            div.col-md-3.conts.text-left
+                h4 Contact Details
+                ul.cntdets
+                    li
+                        a(href="mailto:fm.taylor@gmail.com")
+                            img(src="../img/fiona/eamil.png")
+                            | buzzintoday@buzzin.com
+                    li
+                        a(href="tel:01698 842 735") 
+                            img(src="../img/fiona/phone.png")
+                            | 0987654321
+
+            div.col-md-12.text-center
+                p © 2017 WebriQ Services | All Rights Reserved by 
+                  a(href="//webriq.Services/" target="_blank") WebriQ Services.
+
+    != js()
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+    script(type="text/javascript" src='../js/lightbox-plus-jquery.min.js')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type="text/javascript" src="../js/webriq-bootstrap-material-ui.min.js")
+    script(type="text/javascript" src="../js/jquery.expander.js")
+    script(type="text/javascript" src="../js/jquery.vscroll.js")
+    script(type="text/javascript" src='../js/isotope.pkgd.min.js')    
+    script(type="text/javascript" src='../js/imagesloaded.pkgd.min.js')
+    script(type="text/javascript" src='../js/lazyload.js')
+    script(type="text/javascript" src='../js/sidenav.min.js')
+
+    script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589081c799aa2210")
+    script#dsq-count-scr(src='//http-dailmorephotography-buzzin-today.disqus.com/count.js', async='')
+
+    script.
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://buzzin-philippe.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                  return false;
+                } else {
+                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                  $target.focus(); // Set focus again
+                };
+              });
+            }
+          }
+        });
+
+    script.
+      $('[data-sidenav]').sidenav();
+
+    script.
+      $(document).ready(function(){
+      $(".closebtn").click(function(){
+      $("nav").removeClass("show");
+      });
+      });
+
+    script.
+      $(document).ready(function() {
+      $('.det.expand').expander({
+      slicePoint: 167, //It is the number of characters at which the contents will be sliced into two parts.
+      widow: 2,
+      expandSpeed: 0, // It is the time in second to show and hide the content.
+      userCollapseText: 'less' // Specify your desired word default is Less.
+      });
+
+      $('.det.expand').expander();
+
+      });
+
+    script.
+      $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+      scrollTop: target.offset().top
+      }, 600);
+      }
+      });
+
+    script.
+      (function() {
+      "use strict";
+      var toggles = document.querySelectorAll(".c-hamburger");
+      for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+      };
+      function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+      }
+      })(); 
+
+    script.
+      $(function(){
+      var shrinkHeader = 2;
+      $(window).scroll(function() {
+      var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+      $('.containerheader').addClass('shrink');
+      }
+      else {
+      $('.containerheader').removeClass('shrink');
+      }
+      });
+      function getCurrentScroll() {
+      return window.pageYOffset || document.documentElement.scrollTop;
+      }
+      });
+
+    script.
+      $(window).load(function(){
+      var $container = $('#shop_wrapper').imagesLoaded( function() {
+      $container.isotope({
+      boxSelector: '.webshop_list_item'
+      });
+      });
+      // filter
+      $('#filters').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
+      });
+      });
+
+    script(type='text/javascript').
+      $(document).ready(function () {
+        $(".buttontween").on("click", function() {
+          $(".sidenav-menu").removeClass('show-down');
+        })
+        $("#sidenav-toggle").on('click', function(){
+          $('.sidenav-menu').each(function(){
+            var list = $(this).find('li');
+            TweenMax.staggerFromTo(list, 1, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.2);
+          })        
+        })
+        $("#sidenav-toggle").on('click', function(){
+            TweenMax.staggerFromTo('.social-sidebar-topright li a', 2, {x:"-=100", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);
+            TweenMax.staggerFromTo('.credentials_nav p', 2, {x:"-=80", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);      
+        })
+            TweenMax.staggerFromTo('#sliderhead .text-det h2', 3, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+            TweenMax.staggerFromTo('#sliderhead .text-det h4', 4, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+            TweenMax.staggerFromTo('#sliderhead .booknw2', 4, {y:"+=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+      })
+
+    <!-- Google Analytics -->
+    script(type="text/javascript")
+        != records.site.sitedata[0].analytics
