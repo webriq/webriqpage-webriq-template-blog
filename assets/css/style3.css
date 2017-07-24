@@ -733,7 +733,11 @@
 #more-blog {
 	padding:40px 0px 0px;
 }
-
+#more-blog a{
+	height:auto;
+	padding:10px 30px;
+	border-radius:30px
+}
 #divhead_bob_newlayout.blogsentriesheader  { 
 	background:#26468f url(../img/bob/slider-webriqblog.jpg) no-repeat fixed;
 }
@@ -814,7 +818,7 @@
     color: rgba(255, 255, 255, 0.87);
 }
 
-.fullimageblog .list::before {
+#blogsection .fullimageblog .list-thumbnail::before {
     content: "";
     position: absolute;
     top: 100;
@@ -823,7 +827,34 @@
     height: 70%;
     background: #dae2f8;
     background: -webkit-linear-gradient(to bottom,rgba(251,246,246,.6),rgba(162,104,104,.6),rgba(29,53,80,.8));
-    background: linear-gradient(to bottom,rgba(97, 58, 58, 0),rgb(13, 50, 78));
+    background: linear-gradient(to bottom,rgba(97, 58, 58, 0),rgb(13, 71, 135)) !important;
+}
+
+#blogsection .itemblogsbob .list-thumbnail::before {
+    content: "";
+    position: absolute;
+    top: 100;
+    bottom:0 !important;
+    width: 100%;
+    height: 70%;
+    background: #dae2f8;
+    background: -webkit-linear-gradient(to bottom,rgba(251,246,246,.6),rgba(162,104,104,.6),rgba(29,53,80,.8));
+    background: linear-gradient(to bottom,rgba(97, 58, 58, 0),rgb(152, 152, 167));
+}
+
+#blogsection .list-thumbnail {
+	overflow:hidden;
+}
+
+#blogsection .list-thumbnail img {
+	-webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  -webkit-transform: scale(1, 1, 1);
+          transform: scale(1, 1, 1);
+}
+#blogsection .itemblogsbob:hover img {
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+          transform: scale3d(1.1, 1.1, 1);
 }
 
 
@@ -831,8 +862,33 @@
     width: 30% !important;
 }
 
-
-
+#blogsection .author img{
+	margin-right:10px;
+}
+#blogsection .list .list-description {
+    padding: 0px 35px 10px;
+}
+#blogsection .list .list-heading {
+    padding: 15px 35px 50px;
+}
+#blogsection  .listsmallcard .list-heading{
+	padding: 15px 35px 0px !important;
+}
+#blogsection .box-shadow .list-thumbnail{
+	position:relative;
+}
+#blogsection .box-shadow .list-thumbnail .date{
+	position:absolute;
+	bottom:15px;
+	padding:10px 30px;
+	color:#fff;
+}
+#blogsection .box-shadow .list-thumbnail .date svg{
+	margin-right:10px;
+}
+.blogrow1 {
+	padding:20px 0px 30px
+}
 
 
 

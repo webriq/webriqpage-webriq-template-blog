@@ -1,7 +1,7 @@
 ---
 title: 5 Important steps small businesses can take to get their business noticed on-line
 id: 5c028336-e18f-43c6-bf13-c7ea70f7deb0
-author: Bob Wotherspoon
+author: WebriQ
 leadtag: blog
 thumbnail: /img/blog/5-importants-steps.jpg
 banner: /img/blog/featured/5-importants-steps.jpg

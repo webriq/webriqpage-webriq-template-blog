@@ -16,6 +16,15 @@
          "url":"/#copyright"
       }
    ],
+   "configslider": [
+
+      {
+         "slidertext":"WebriQ Blog",
+         "slidersubtext":"We enhance the online credibility of your business"
+      }
+
+   ],
+   
    "headernavigation":[  
       {  
          "email":"webriqblog@webriq.services",

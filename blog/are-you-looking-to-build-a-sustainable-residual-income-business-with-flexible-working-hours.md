@@ -1,7 +1,7 @@
 ---
 title: Are you looking to build a sustainable residual income business with flexible working hours?
 id: " "
-author: Bob Wotherspoon
+author: WebriQ
 leadtag: blog
 thumbnail: /img/blog/buzzinuk.jpg
 banner: /img/blog/featured/buzzinuk.jpg
