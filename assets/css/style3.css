@@ -903,6 +903,13 @@
 
 
 @media only screen and (max-width:1024px) {
+
+    .slider1 {
+        display:none;
+    }
+    .slider2 {
+        display:block !important;
+    }
     #blogsection .blogrow1 .itemblogsbob .listsmallcard .list-thumbnail{ 
      display:none;
     }
