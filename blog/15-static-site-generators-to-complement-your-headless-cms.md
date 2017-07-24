@@ -5,10 +5,11 @@ author: WebriQ
 leadtag: blog
 thumbnail: /img/blog/5-importants-steps.jpg
 banner: /img/blog/featured/5-importants-steps.jpg
-shortdesc: "For many small businesses the challenge of promoting themselves and maximising.."
-updatedDate: 2017-07-19T04:38:39.133Z
+postthumb: /img/postthumb.png
+shortdesc: For many small businesses the challenge of promoting themselves and maximising..
+updatedDate: 2017-07-24T06:22:10.768Z
 cmsUserSlug: 15-static-site-generators-to-complement-your-headless-cms
-date: 2017-07-18T00:00:00.000Z
+date: 2017-07-24 
 ---
 
 For many small businesses the challenge of promoting themselves and maximising the opportunity that social media and the internet presents to them can seem quite complex and daunting.
