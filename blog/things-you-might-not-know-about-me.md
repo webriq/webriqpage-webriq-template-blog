@@ -1,13 +1,13 @@
 ---
-title: "Things You Might Not Know About Me"
+title: Things You Might Not Know About Me
 id: 5c028336-e18f-43c6-bf23-c7we70f7deb0
 author: WebriQ
 leadtag: blog
+thumbnail: /img/blog/why-know-blog.jpg
+banner: /img/blog/featured/why-know-blog.jpg
 postthumb: /img/bob/postthumb.png
-thumbnail: /img/blog/social-media-marketing-blog.jpg
-banner: /img/blog/featured/social-media-marketing-blog.jpg
-shortdesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..."
-updatedDate: 2017-07-19T04:39:20.149Z
+shortdesc: Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+updatedDate: 2017-07-24T06:12:44.188Z
 cmsUserSlug: ""
 date: 2017-07-03T00:00:00.000Z
 ---
