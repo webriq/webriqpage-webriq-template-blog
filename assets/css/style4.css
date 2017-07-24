@@ -1,0 +1,827 @@
+
+
+.containerheader.shrink .navbar.navbar-default.home {
+    background-color: #373434 !important;
+    background-image: -webkit-linear-gradient(260deg,rgb(49, 70, 66),#373434);
+    background-image: linear-gradient(260deg,rgb(49, 70, 66),#373434);
+}
+.containerheader.shrink .contct_right_header {
+  margin-bottom:0px !important;
+  padding:10px 0px;
+}
+.containerheader.shrink #sidenav-toggle img{
+  width:25px !important
+}
+
+.contct_right_header {
+	float:right;
+	padding:0px;
+}
+.contct_right_header li{
+	display: inline-block;
+	list-style: none;
+	margin-right:20px;
+}
+.contct_right_header li a{
+	font-size:18px;
+}
+.navbar-default .container:after {
+	content:"";
+	position:absolute;
+	display:block;
+	height:1px !important;
+	width:100%;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(255, 255, 255, 0.18)
+}
+
+.blogbody .navbar-default .container:after,
+.bloglayout .navbar-default .container:after {
+	background:none;
+} 
+.bloglayout .sidenav-menu {
+    padding: 10px 40px 0px;
+    text-align: left;
+}
+.contct_right_header li:nth-child(1) img{
+	display: inline-block;
+	list-style: none;
+	margin-right:10px;	
+}
+.contct_right_header li:nth-child(2) img{
+	display: inline-block;
+	list-style: none;
+	margin-right:10px;	
+}
+.contct_right_header li:hover img{
+	background:#2196F3;
+	transition:.5s;
+}
+.slider_img_right img{
+	max-width:100%;	
+}
+.slider_img_right {
+	padding:0px;
+}
+#sliderhead .col-md-7,
+#sliderhead .container {
+	padding:0px;
+}
+
+.talk a{
+	border-radius:30px;
+	padding:8px 30px;
+	font-size:22px;
+	color:#fff;
+	font-family:"Sansita",sans-serif;
+	border:solid #aafdfa;
+}
+.talk a:hover{
+	text-decoration:none;
+	background:#4bd0cb;
+	border:solid #4bd0cb;
+	color:#fff;
+}
+.talk a img{
+	padding:5px 0px 10px;
+	margin-right:10px;
+}
+.talk {
+	margin-top:40px;
+}
+
+
+
+/*mission*/
+
+#mission {
+	background: #2196f3;
+	padding:50px 0px 30px;	
+	z-index:111;
+	color: #fff;
+}
+
+#mission .ttle_h2:after {
+    content: "";
+    display: block;
+    width: 30px;
+    margin: 35px auto 25px;
+    height:1px;
+    background:#fff;
+}
+
+#mission .miss_serv{
+	padding:80px 0px 40px;
+}
+#mission .miss_serv .col-md-4:nth-child(1){
+	position:relative;
+}
+#mission .miss_serv .col-md-4:nth-child(1) figure::after{
+	content:"";
+	display:block;
+	background: #ffffff !important;
+	height:1px;
+	float:right;
+	width:85%;
+	margin-right:-180px !important;
+	margin-top:100px;
+}
+#mission .miss_serv .col-md-4:nth-child(2) figure::after{
+	content:"";
+	display:block;
+	background: #ffffff !important;
+	height:1px;
+	float:right;
+	width:85%;
+	margin-right:-180px !important;
+	margin-top:100px;
+}
+#mission .miss_serv .col-md-4 figure img{
+	padding:50px 50px;
+}
+#mission .miss_serv .col-md-4 figure{
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	width:59%;
+	margin:0 auto !important;
+}
+#mission .miss_serv .col-md-4 .det_btm {
+	font-size:20px;
+	color:#fff;
+	font-weight:600 !important;
+	margin-top:35px
+}
+
+#mission .miss_det_btm p .more-link{
+	 text-decoration:underline;
+}
+#mission .miss_det_btm p  .less-link {
+	color:#6cfff0;	
+}
+#mission .det_center_missn {
+	padding-top:40px;
+}
+#mission .det_center_missn p{
+	font-style:italic;
+	font-weight:100;
+	padding:0px 150px;
+}
+
+
+/*bio*/
+
+#bioinfo .biodet .row{
+	padding:10px 0px
+}
+#bioinfo .rightbioimg img{
+	width:100%;
+}
+#bioinfo .rightbioimg {
+	padding:0px;
+}
+#bioinfo .leftbio{
+	background:#373434 no-repeat fixed;
+	background-size:cover;
+	max-height:100% !important;
+	height:591px !important;
+	overflow-x:auto !important;
+	padding:40px 50px 0px 100px;
+}
+#bioinfo .leftbio::-webkit-scrollbar-track {
+	border: 5px solid #ddd !important;
+	background-color: #01b4ae !important;
+}
+#bioinfo .leftbio::-webkit-scrollbar {
+	width: 10px !important;
+	background-color: #05a78a;
+}
+#bioinfo .leftbio::-webkit-scrollbar-thumb {
+	background-color: #52a5e8 !important;
+}
+
+
+#bioinfo .leftbio .titlesevces {
+	font-size:40px;
+	color:#fff;	
+}
+#bioinfo .leftbio .subbio {
+	font-size:18px;
+	color:#e8e8e8;
+	font-weight:100;
+}
+#bioinfo .leftbio .subbio:after {
+    content: "";
+    display: block;
+    width: 30px;
+    margin: 35px 0 25px;
+    height: 1px;
+    background: #fff;
+}
+#bioinfo .leftbio .headbio {
+	font-size:28px;
+	color: #52a5e8;
+	font-weight:100;
+	padding-top:20px !important;
+}
+#bioinfo .leftbio .headbio span{
+	font-size:28px;
+	color:#fff;
+	font-weight:600;
+}
+#bioinfo .leftbio .biodet {
+	padding-top:30px;
+}
+#bioinfo .leftbio .biodet .bioleft-thumb img {
+	border: solid 1px #52a5e8;
+	padding:10px 14px;
+	border-radius:50%;
+	margin-top:10px;
+}
+#bioinfo .leftbio .biodet .bioright-det {
+	padding:0px;
+}
+#bioinfo .leftbio .biodet .bioright-det .detbiofull{
+	font-size:20px;
+	padding:0px;
+	color:#fff;
+	font-weight:300;
+}
+.detbiofull a{
+	color: #52a5e8;
+}
+
+
+/*gallery*/
+
+#gallery {
+	background: #32465e;
+	padding:60px 0px 60px;
+}
+#gallery .gallry-list {
+	padding:40px 0px
+}
+#gallery .title-header {
+	font-size:25px;
+	color: #52a5e8;
+	font-weight: 700;
+}
+#gallery .sub {
+	font-size:24px;
+	color:#fff;
+	font-weight:100;
+	line-height:1.5em;
+	margin-top:30px;
+}
+#gallery .gallry-list .col-md-4 {
+	padding:0px !important;
+	background:#1a7a80;
+}
+#gallery .gallry-list .col-md-4 img{
+	width:100% !important;
+	opacity:.7
+}
+#gallery .gallry-list .col-md-4:hover img{ 
+	opacity:1; 
+}
+
+/*start journey*/
+
+#startjourney { 
+	padding:120px 0px;
+	background:url(../img/fiona/northlanarkshire_bg2.jpg)no-repeat fixed;
+	background-position:cover !important;
+	background-size:100% 100%;
+}
+#startjourney .ttle_start{ 
+	font-size:35px;
+	color:#fff;
+	font-weight:100;
+}
+
+
+/*Responsive*/
+
+@media(max-width:1024px) {
+	#blogsec .container.text-center{
+		padding:0px 25px !important;
+	}
+	#page-top.homelayout #gallery .container {
+		padding: 0px 55px !important;
+	}
+	#page-top.homelayout #mission .container {
+		padding: 0px 25px !important;
+	}
+	.homelayout #sliderhead .container {
+		padding:0px 40px !important;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		font-size:30px !important;
+		line-height:1.8em;
+		margin-top: 10px;
+	}
+	.homelayout #sliderhead .text-det span.coach {
+		font-size:70px !important;
+	}
+	#sliderhead .worldwd {
+		font-size: 25px !important;
+		margin-top: 45px;
+		line-height: 1.3em;
+	}
+	#bioinfo .leftbio {
+		background: #373434 url(/img/fiona/bio-bg.png)no-repeat !important;
+		background-size: cover;
+		max-height: 100% !important;
+		height: 448px !important;
+		padding: 40px 50px 0px 50px;
+	}
+	#startjourney { 
+		padding:120px 0px;
+		background:url(../img/fiona/northlanarkshire_bg.jpg)no-repeat !important;
+		background-position:cover !important;
+		background-size:100% 100%;
+	}
+	#bioinfo .leftbio .bioleft-thumb {
+		padding:0px;
+	}
+	#bioinfo .bioright-det {
+		padding:0px 15px !important;
+	}
+	#bioinfo .leftbio .biodet .bioright-det .detbiofull {
+		font-size: 18px;
+		padding: 0px;
+		color: #fff;
+		font-weight: 300;
+	}
+	#bioinfo .leftbio .bioleft-thumb img{
+		max-width:100%;
+	}
+	#bioinfo .leftbio .biodet {
+		padding-top: 20px;
+	}
+	#mission .miss_serv .col-md-4:nth-child(1) figure::after{
+		margin-right:-155px !important;
+		margin-top:80px;
+	}
+	#mission .miss_serv .col-md-4:nth-child(2) figure::after{
+		margin-right:-150px !important;
+		margin-top:80px;
+	}
+	#mission .miss_det_btm p {
+		font-size: 20px;
+		color: #fff;
+	}
+	#blogsec .news-item .blog-title {
+		margin: 0px ;
+		padding-top: 0px;		
+	}
+	#blogsec .news-item .blog-title a{
+		font-size:25px !important;	
+	}
+	#blogsec .news-item .blog-rightdet .published {
+		margin-top: 15px;
+		font-size:13px
+	}
+	#blogsec .news-item .blog-rightdet .short-desc p {
+		font-size: 16px !important;
+	}
+	#blogsec .news-item .blog-det {
+		padding: 0px 19px 0px;
+	}
+	#blogsec .short-desc p {
+		color: #000000;
+	}
+	#blogsec .news-item .blog-rightdet .short-desc {
+		padding: 5px 0px 0px;
+	}
+	#blogsec .news-item .blog-rightdet {
+		text-align: left;
+		padding: 20px 20px 0px !important;
+	}
+
+	#blogsec .container.news-item{
+		width:100%;
+	}
+}
+
+@media(max-width:768px) {
+	#blogsec .news-item .blog-rightdet {
+		text-align: left;
+		padding: 20px 20px 20px !important;
+	}
+	.contct_right_header {
+		padding:0px;
+	}
+	.contct_right_header li {
+		margin-right: 10px;
+	}
+	.contct_right_header li a {
+		color: #fff;
+    	font-size: 16px;
+	} 
+	.slider_line_txt h2 .underline:before {
+		width: auto; 
+	}
+	.slider_img_right { 
+		top:105px; 
+		width:70%;
+		float:right;
+		position:absolute;
+		right:0;
+	}
+	.slider_img_right img{
+		width:64%;
+		float:right;
+	}
+	#sliderhead .text-det h2 {
+		padding: 0px 0px;
+	}
+	#sliderhead .worldwd {
+		font-size: 25px !important;
+		margin-top: 35px;
+		line-height: 1.3em;
+	}
+	#sliderhead {
+		padding: 140px 0 60px;
+		background-size: 100% 100%!important;
+	}
+	#sliderhead .text-det h4 {
+		font-size: 22px !important;
+		padding: 0px 0px 0px 0px;
+		width:60%;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		font-size: 20px !important;
+		line-height: 1.8em;
+		margin-top: 10px;
+		width:75%;
+	}
+	.talk a {
+		border: solid #4bd0cb;
+		background:#4bd0cb;
+	}
+	.slider_line_txt h2 .underline {
+		font-size: 55px !important;
+	}
+	.homelayout #sliderhead .text-det span.coach {
+		font-size: 65px !important;
+	}
+	.containerheader.shrink .btnrigt {
+		padding: 10px 0px 0px;
+	}
+
+	/*mission*/
+
+	#mission .miss_serv .col-md-4 figure img {
+		padding: 30px 30px;
+	}
+	#mission .miss_serv .col-md-4:nth-child(3) figure img {
+		padding: 30px 26px;
+	}
+	#mission .miss_serv .col-md-4:nth-child(1) figure::after{
+		margin-right:-115px !important;
+		margin-top:60px;
+	}
+	#mission .miss_serv .col-md-4:nth-child(2) figure::after{
+		margin-right:-110px !important;
+		margin-top:60px;
+	}
+	#mission .miss_serv .col-md-4 .det_btm {
+		font-size: 16px;
+		margin-top: 35px;
+	}
+	#mission h4 {
+		font-size:18px;
+		color: #fff;
+		font-weight: 600;
+		max-width: 100% !important;
+		margin: auto;
+		max-width: 100%;
+		padding-top: 5px;
+	}
+
+	/*bioinfo*/
+
+	#bioinfo .leftbio {
+		background: #373434 url(/img/fiona/bio-bg.png)no-repeat !important;
+		background-size: cover;
+		max-height: 100% !important;
+		height: 100% !important;
+		padding: 40px 50px 0px 50px;
+		width:100%;
+		overflow:i
+	}
+	#bioinfo .rightbioimg {
+		padding: 0px;
+		display:none;
+	}
+	.leftbio {
+		text-align:center;
+	}
+	#bioinfo .leftbio .subbio:after {
+		margin: 35px auto 25px;
+	}
+	#bioinfo .leftbio .headbio {
+		font-size: 24px;
+		color: #38ffea;
+		font-weight: 100;
+		padding-top: 20px !important;
+	}
+	.biodet .row{
+		border:solid #5d5d5d 1px;
+		width:48%;
+		float:left;
+		position:relative;
+		height:auto;
+		margin:5px;
+		text-align:center;
+		margin-top:80px;
+	}
+	#bioinfo .leftbio {
+		background: #373434 url(/img/fiona/bio-bg.png)no-repeat bottom!important;
+		background-size: cover;
+		max-height: 100% !important;
+		height: 100% !important;
+		padding: 40px 50px 50px 50px;
+		width: 100%;
+	}
+	#bioinfo .leftbio .biodet .bioright-det .detbiofull {
+		font-size: 18px;
+		padding: 0px;
+		color: #fff;
+		font-weight: 300;
+		margin-top:45px;
+	}
+	#bioinfo .leftbio {
+		position:relative;
+	}
+	#bioinfo .leftbio .bioleft-thumb {
+		position:absolute;
+		top:-60px;
+		left:0;
+		right:0;
+	}
+	#bioinfo .leftbio .bioleft-thumb img{
+		background:#373434
+	}
+	#blogsec .news-item .blog-title {
+		padding:0px !important;
+		margin:0px !important;
+	}
+	#blogsec .news-item .blog-title a {
+		font-size:30px !important;
+		font-weight: 700;
+	}
+	#blogsec .news-item .blog-title a:hover {
+		color:#1a7a80
+	}
+	#blogsec .news-item .blog-rightdet .published {
+		font-size: 18px;
+		color: #000;
+		font-weight: 1000;
+		margin-top: 15px;
+	}
+	#copyright .container .det {
+		font-size: 18px;
+		padding: 0px 30px 0px 0px;
+	}
+	#copyright .col-md-12 p {
+		color: #fff;
+		font-weight: 600;
+		font-size: 16px;
+	}
+	.bloglayout .btnrigt {
+    	padding: 5px 0px 0px;
+	}
+	.bloglayout .containerheader.shrink nav{
+		border-bottom:solid #565252 1px !important;
+	}
+	.bloglayout .containerheader.shrink .btnrigt {
+    	padding: 15px 0px 0px;
+	}
+}
+
+@media(max-width:767px) {
+	#mission .miss_serv .col-md-4:nth-child(2) figure::after,
+	#mission .miss_serv .col-md-4:nth-child(1) figure::after{
+		display:none;
+	}
+	#mission .col-xs-12.setpenv {
+		padding:0px 215px;
+		margin-top:20px
+	}
+	.miss_serv {
+		text-align:center !important
+	}
+	#startjourney {
+		padding: 120px 0px;
+		background: url(../img/fiona/northlanarkshire_bg.jpg)no-repeat !important;
+		background-position: cover !important;
+		background-size: 100% 100%;
+	}
+}
+
+@media(max-width:700px) {
+	.slider_img_right {
+		display:none;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		width: 100%;
+	}
+	#sliderhead .text-det h4 {
+		width: 100%;
+	}
+	.homelayout #sliderhead .container {
+		text-align:center;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		font-size: 30px !important;
+		line-height:1.5em;
+		margin-top: 10px; 
+	}
+	.contct_right_header li a{
+		font-size:0;		
+	}
+	.contct_right_header li {
+		margin-right: 0px;
+	}
+	#mission .col-xs-12.setpenv {
+		padding: 0px 165px;
+		margin-top: 20px;
+	}
+	#mission .det_center_missn p {
+		font-style: italic;
+		font-weight: 100;
+		padding: 0px 100px;
+	}
+	#mission .miss_serv {
+		padding: 40px 0px 40px;
+	}
+	.biodet .row {
+		width: 100%;
+		margin-top: 60px;
+	}
+	#gallery .gallry-list .col-md-4 {
+		margin: 10px 0px !important;
+		background: #1a7a80;
+	}
+	#startjourney .ttle_start {
+		font-size: 25px;
+		color: #fff;
+		font-weight: 100;
+	}
+}
+
+@media(max-width:500px) {
+	.slider_img_right {
+		display:none;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		width: 100%;
+	}
+	#sliderhead .text-det h4 {
+		width: 100%;
+	}
+	.homelayout #sliderhead .container {
+		text-align:center;
+	}
+	.homelayout #sliderhead .text-det h2 {
+		font-size: 30px !important;
+		line-height:1.5em;
+		margin-top: 10px; 
+	}
+	body #sliderhead {
+		padding: 120px 0px 50px;
+		background-size: 200% 100% !important;
+	}
+	#sliderhead .text-det h4 {
+		font-size: 18px !important;
+		padding: 0px 0px 0px 0px;
+	}
+	#mission .miss_serv .col-md-4{
+		width:50%;
+	}
+	.homelayout #sliderhead .text-det span.coach {
+		font-size: 45px !important;
+	}
+	.contct_right_header li a{
+		font-size:0;		
+	}
+	.contct_right_header li {
+		margin-right: 0px;
+	}
+	#mission .miss_serv .col-md-4 figure img {
+		padding: 20px 20px !important;
+	}	
+	#mission .col-xs-12.setpenv {
+		padding: 0px 45px;
+		margin-top: 20px;
+	}
+	#mission .miss_serv .col-md-4 .det_btm {
+		font-size: 16px;
+		margin-top: 15px;
+		margin-bottom:20px;
+	}
+	#mission .det_center_missn p {
+		font-style: italic;
+		font-weight: 100;
+		padding: 0px 100px;
+	}
+	#mission .miss_serv {
+		padding: 40px 0px 40px;
+	}
+	.biodet .row {
+		width: 100%;
+		margin-top: 60px;
+	} 
+	#mission .col-xs-12.setpenv {
+		padding: 0px 120px;
+		margin-top: 10px;
+		width:100%;
+	}
+	#mission .miss_serv ..col-xs-12.setpenv figure img {
+    	padding: 20px 10px !important;
+	}
+	#mission .det_center_missn p {
+		font-style: italic;
+		font-weight: 100;
+		padding: 0px 20px;
+	}
+	#gallery .sub {
+		font-size: 22px;
+	}
+	#startjourney .ttle_start {
+		font-size: 22px;
+		font-weight: 600;
+		padding:0px 10px;
+	}
+}
+
+@media(max-width:480px) {
+	.btnrigt a {
+		font-size:0px !important
+	}
+	.homelayout #sliderhead .text-det span.coach {
+		font-size: 35px !important;
+	}
+	.talk {
+		margin-top: 20px;
+	}
+	.talk a {
+		font-size: 18px;
+	}
+	.slider_line_txt h2 {
+		letter-spacing: 2px;
+	}
+	.slider_line_txt h2 .underline {
+		font-size: 35px !important;
+	}
+	#mission .miss_serv {
+		padding: 40px 0px 20px;
+	}
+	#mission .miss_det_btm p {
+		font-size: 16px;
+		color: #fff;
+	}
+	#mission .ttle_h2 {
+		font-size: 30px;
+		font-weight: 600;
+	}
+	#bioinfo .leftbio .titlesevces {
+		font-size: 30px;
+	}
+	#bioinfo .leftbio .headbio {
+		font-size: 18px;		
+		padding-top: 0px !important;
+	}
+	#bioinfo .leftbio {
+		padding: 40px 30px 50px 30px;
+	}
+	#gallery .sub {
+		font-size: 18px;
+		line-height: 1.3em;
+		margin-top: 30px;
+	}
+	#gallery {
+		padding: 40px 0px 60px;
+	}
+	#startjourney .ttle_start {
+		font-size: 18px;
+	}
+	#startjourney {
+		padding: 80px 0px;
+	}
+	#blogsec .news-item .blog-title a {
+		font-size: 25px !important;
+		font-weight: 700;
+		line-height:1.2em;
+	}
+	#blogsec .news-item .blog-rightdet {
+		text-align: center;
+		padding: 20px 0px 30px !important;
+	}
+	#blogsec .news-item .blog-rightdet .published {
+		font-size: 14px;
+	}
+}

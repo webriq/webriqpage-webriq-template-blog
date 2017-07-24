@@ -1,14 +1,78 @@
 @import '_settings'
+@import '_colorize'
+@import '_navigation'
+@import '_blog'
+@import '_boxes'
+@import '_media'
+@import '_button'
+
 
 normalize-css()
 base()
 
 body
-  padding: 0px
-  font-family: "Open sans", Arial, sans-serif
+	padding 0px
+	font-family $roboto, sans-serif
+	font-size $font-size
+	color $font-color-paragraph
+	letter-spacing $font-letter-spacing
+	font-weight $font-weight
 
-header, .footer
-  text-align:center
+.lnks .footerlink.hiden
+	display none
 
-header
-  padding: 5em 0em
+h1,h2,h3,h4,h5,h6
+	font-family $font-stack, arial
+	font-weight 300
+
+.lead-text
+	font-size 18px
+	font-weight 300
+	padding-right 55px
+	padding-left 55px
+
+a:hover
+	color $primary_color !important
+	text-decoration none
+
+.heading-title
+	font-size 16px
+	text-transform uppercase
+	font-weight 300
+	background #fff
+	padding 20px 25px
+	margin 0 0 15px 0
+
+svg
+	vertical-align middle
+	position relative
+	top -2px
+	margin-right 5px
+
+.footer
+	margin-top 55px
+
+h2
+	font-size 34px
+h3
+	font-size 28px
+
+blockquote
+	background #f6f6f6
+
+pre
+	border none
+
+
+ul
+	padding-top 5px
+	
+	li.facebook
+		svg
+			fill #2979FF
+	li.twitter
+		svg
+			fill #40C4FF
+	li.pinterest
+		svg
+			fill #CB2027

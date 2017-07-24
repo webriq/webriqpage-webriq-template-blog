@@ -1,0 +1,166 @@
+doctype html
+html
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        //- uncomment if your site is responsive!
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        meta(name='description', content= records.site.sitedata[0].metadesc)
+        meta(name='author', content= records.site.sitedata[0].metauthor)
+        meta(name="keywords" content= records.site.sitedata[0].metakeyword)
+
+        title= records.site.sitedata[0].sitename +" - "
+             | Bob Wothersomm | Home
+
+        link(rel="icon", href= records.site.sitedata[0].icon, type="image/*")
+        link(rel="shortcut icon", href= records.site.sitedata[0].icon, type="img/*")
+        link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css', type='text/css')
+        link(type='text/css', rel='stylesheet', href='/css/webriq-bootstrap-material-ui.min.css', media='screen,projection')
+        link(rel='stylesheet', href='/css/font-awesome.min.css')
+        link(rel='stylesheet', href='/css/hover.css')
+        link(rel='stylesheet', href='/css/sidenav.min.css') 
+        link(rel='stylesheet', href='/css/style2.css')
+        link(rel='stylesheet', href='/css/style3.css')
+        link(rel='stylesheet', href='/css/master.css')
+
+        body#page-top.homelayout
+            .header.bob-newhome
+                if _path=="/entries-bob.html"
+                    include includes/header-new-bob
+                else
+                    include includes/header-new-bob2
+
+            .main-container
+                #blogsec.section.blogsentries
+                    .container
+                        .row
+                            .col-md-8
+                                block content
+                            .col-md-4
+                                include includes/column-right
+
+            .footer
+                include includes/footer-bob
+
+            script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+            script(type="text/javascript" src="../js/webriq-bootstrap-material-ui.min.js")
+            script(type="text/javascript" src='../js/sidenav.min.js')
+            script(type="text/javascript" src="../js/jquery.vscroll.js")
+            script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589081c799aa2210")
+            
+            if _path == "/index.html"
+            else if _path == "/entries.html"
+            else
+                script(type="text/javascript" src='/js/bundle.js')
+            script.
+                $(document).ready(function(){
+                    $('[data-sidenav]').sidenav();
+                    $(".closebtn").click(function(){
+                    $("nav").removeClass("show");
+                    });
+                    //- $('.blogsentriesheader').VScroll(0.5v);
+                    //- $('#services').VScroll(0.5);
+                });
+
+            script.
+                (function() {
+                "use strict";
+                var toggles = document.querySelectorAll(".c-hamburger");
+                for (var i = toggles.length - 1; i >= 0; i--) {
+                var toggle = toggles[i];
+                toggleHandler(toggle);
+                };
+                function toggleHandler(toggle) {
+                toggle.addEventListener( "click", function(e) {
+                e.preventDefault();
+                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+                });
+                }
+                })();
+
+                // Select all links with hashes
+                $('a[href*="#"]')
+                  // Remove links that don't actually link to anything
+                  .not('[href="#"]')
+                  .not('[href="#0"]')
+                  .click(function(event) {
+                    // On-page links
+                    if (
+                      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                      && 
+                      location.hostname == this.hostname
+                    ) {
+                      // Figure out element to scroll to
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                      // Does a scroll target exist?
+                      if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                          scrollTop: target.offset().top
+                        }, 1000, function() {
+                          // Callback after animation
+                          // Must change focus!
+                          var $target = $(target);
+                          $target.focus();
+                          if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                          } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                          };
+                        });
+                      }
+                    }
+                  });
+            
+            script(type='text/javascript').
+                $(document).ready(function () {
+                    $(".buttontween").on("click", function() {
+                        $(".sidenav-menu").removeClass('show-down');
+                    })
+                    $("#sidenav-toggle").on('click', function(){
+                        $('.sidenav-menu').each(function(){
+                            var list = $(this).find('li');
+                            TweenMax.staggerFromTo(list, 1, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.2);
+                        })
+                    })
+                    $('a[href^="#"]').on('click', function(event) {
+                        var target = $(this.getAttribute('href'));
+                        if( target.length ) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                        }, 800);
+                        }
+                    });
+                    $("#sidenav-toggle").on('click', function(){
+                        TweenMax.staggerFromTo('.social-sidebar-topright li a', 2, {x:"-=100", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);
+                        TweenMax.staggerFromTo('.credentials_nav p', 2, {x:"-=80", opacity: "0"}, {x:"0", opacity: "1"}, 0.4);
+                    })
+                        TweenMax.staggerFromTo('#head-details .detleft-slider h1', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#head-details .detleft-slider h4', 3, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#head-details .detleft-slider .detslidbob', 3, {y:"+=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#head-details .detleft-slider .btnsliderbob', 3, {x:"-=50", opacity: "0"}, {x:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#head-details .sliderimg-right', 3, {x:"+=50", opacity: "0"}, {x:"0", opacity: "1"}, 0.9);
+                    
+                })
+
+                $(window).on("scroll", function() {
+                    var scrolled = $(this).scrollTop();
+                    $(".section").filter(function() {
+                    return scrolled >= $(this).offset().top - 240
+                    }).addClass("in-view").trigger("classChange")
+                    });
+
+                    $(".section").on("classChange", function(e) {         
+                        TweenMax.staggerFromTo('#mission.section .ttle_h2', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#mission.section .ttle_h4_sub', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#gallery.section h1', 2, {y:"-=50", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        TweenMax.staggerFromTo('#gallery.section h5', 2, {y:"-=40", opacity: "0"}, {y:"0", opacity: "1"}, 0.9);
+                        $(this).off(e);
+                    });
