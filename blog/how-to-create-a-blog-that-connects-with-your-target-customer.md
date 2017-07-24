@@ -5,8 +5,9 @@ author: WebriQ
 leadtag: Blog
 thumbnail: /img/blog/target-customer.jpg
 banner: /img/blog/featured/target-customer.jpg
-shortdesc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry..."
-updatedDate: 2017-07-19T04:38:18.949Z
+postthumb: /img/postthumb.png
+shortdesc: Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+updatedDate: 2017-07-24T06:15:00.546Z
 cmsUserSlug: ""
 date: 2017-07-18T00:00:00.000Z
 ---
