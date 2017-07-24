@@ -5,8 +5,9 @@ author: WebriQ
 leadtag: blog
 thumbnail: /img/blog/buzzinuk.jpg
 banner: /img/blog/featured/buzzinuk.jpg
-shortdesc: "For many people in the modern economy the opportunity to have permanent and reliable employment..."
-updatedDate: 2017-07-19T04:37:06.304Z
+postthumb: /img/postthumb.png
+shortdesc: For many people in the modern economy the opportunity to have permanent and reliable employment...
+updatedDate: 2017-07-24T07:30:29.202Z
 cmsUserSlug: ""
 date: 2017-07-19T00:00:00.000Z
 ---
