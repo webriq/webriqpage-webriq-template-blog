@@ -895,6 +895,23 @@
 }
 
 
+#blogsection .blogrow1 .itemblogsbob .listsmallcard .list-thumbnail{ 
+     display:none;
+}
+
+#blogsection .list .list-footer a {
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+    text-transform: uppercase;
+    font-size:12px
+}
+#blogsection .list-footer .col-sm-5{
+     padding:0px;
+     text-align:right
+}
+#blogsection .list-footer  .col-sm-7 {
+     padding:0px
+}
 
 
 
@@ -1061,6 +1078,10 @@
 }
 
 @media only screen and (max-width:768px) {
+
+	#blogsection .blogrow1 .itemblogsbob .listsmallcard .list-thumbnail{ 
+         display:block;
+    }
 
 	.firstpostvisible {
 		display:none;
