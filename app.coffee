@@ -47,8 +47,8 @@ module.exports =
       folder: "blog"
       output: "feed.xml"
       settings:
-        feed_url : "http://bobwotherspoon.buzzin.today/feed.xml"
-        site_url: "http://bobwotherspoon.buzzin.today/"
+        feed_url : "//webriq-template-blog.sites.webriqs.com/feed.xml"
+        site_url: "//webriq-template-blog.sites.webriqs.com/"
       )
   ]
 
