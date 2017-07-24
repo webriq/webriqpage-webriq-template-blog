@@ -907,6 +907,11 @@
      display:none;
     }
 
+    #blogsection  .blogrow1 .col-md-4 .col-md-12 .list-heading {
+        padding: 0 30px;
+        position: relative !important;
+        top: 0px !important;
+    }
     #blogsection .list .list-footer a {
         font-weight: 500;
         color: rgba(0,0,0,.87);
