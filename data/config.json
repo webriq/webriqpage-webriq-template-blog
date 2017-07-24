@@ -1,0 +1,51 @@
+{  
+   "config":[  
+      {  
+         "item":"Home",
+         "class":"footerlink",
+         "url":"/#divhead_bob_newlayout"
+      },
+      {  
+         "item":"Blog Post",
+         "class":"footerlink",
+         "url":"/#blogsection"
+      },
+      {  
+         "item":"Contact",
+         "class":"footerlink",
+         "url":"/#copyright"
+      }
+   ],
+   "configslider": [
+
+      {
+         "slidertext":"WebriQ Blog",
+         "slidersubtext":"We enhance the online credibility of your business"
+      }
+
+   ],
+   
+   "headernavigation":[  
+      {  
+         "email":"webriqblog@webriq.services",
+         "phone":"+44 7711 651633",
+         "logo":"/img/logo.png"
+      }
+   ],
+   "headerskype":[  
+      {  
+         "id":"webriqmanagement"
+      }
+   ],
+   "about":[  
+      {  
+         "name":"WebriQ Blog",
+         "info":"WebriQ Blog | A web blog template perfect for you and your blog website where you can highlight your post direct to the information..",
+         "facebook":"webriqservices",
+         "twitter":"webriqservices",
+         "pinterest":"WebFactories",
+         "linkedin":"bobwotherspoon"
+      }
+   ],
+   "updatedDate":"2017-07-18T09:47:30.892Z"
+}

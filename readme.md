@@ -2,6 +2,13 @@
 
 This is a simple example of how to integrate Webriq CMS with a roots based site.
 
+## Redirects
+
+```
+/blog/* /:splat 301!
+/* /blog/:splat 200
+```
+
 ## Setting up
 
 * Install [node](https://nodejs.org/en/) application in your system.
