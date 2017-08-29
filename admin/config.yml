@@ -24,20 +24,7 @@ collections: # A list of collections the CMS should be able to edit
   #   meta: # Meta data fields. Just like fields, but without any preview element
   #     - {label: "Publish Date", name: "date", widget: "datetime"}
   #     - {label: "Categories", name: "categories", widget: "string"}
-  - name: "filemanager"
-    label: "File Manager"
-    files:
-      - name: "filemanager"
-        label: "File Manager"
-        file: "data/files.json"
-        description: "Add file(image,doc,pdf) here"
-        fields:
-          - label: "File Manager"
-            name: "filemanager"
-            widget: "list"
-            fields:
-              - {label: "File Name", name: "name", widget: "string"}
-              - {label: "File Type", name: "file", widget: "image", media_folder: "assets/files"}
+  
   - name: "sitedata"
     label: "Site Information"
     files:
@@ -63,18 +50,17 @@ collections: # A list of collections the CMS should be able to edit
     folder: "blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Enter Unique Id eg: 12345", name: "id", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}      
+      - {label: "Short Description", name: "shortdesc", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Tags", name: "leadtag", widget: "string"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image", class: "image thumbnail", media_folder: "assets/img/blog"}
       - {label: "Banner", name: "banner", widget: "image", class: "image featured", media_folder: "assets/img/blog/featured"}
       - {label: "Author Image", name: "postthumb", widget: "image", class: "image postthumb", media_folder: "assets/img"}
-      - {label: "Short Description", name: "shortdesc", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "date"}
-
+      
   # Data structure for Footer Data
   - name: "config"
     label: "Configuration File"
@@ -111,3 +97,18 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Add your facebook username eg: webriq", name: "facebook", widget: "string"}
               - {label: "Add your twitter username eg: webriq", name: "twitter", widget: "string"}
               - {label: "Add your pinterest username eg: webriq", name: "pinterest", widget: "string"}
+
+  - name: "filemanager"
+      label: "File Manager"
+      files:
+        - name: "filemanager"
+          label: "File Manager"
+          file: "data/files.json"
+          description: "Add file(image,doc,pdf) here"
+          fields:
+            - label: "File Manager"
+              name: "filemanager"
+              widget: "list"
+              fields:
+                - {label: "File Name", name: "name", widget: "string"}
+                - {label: "File Type", name: "file", widget: "image", media_folder: "assets/files"}
