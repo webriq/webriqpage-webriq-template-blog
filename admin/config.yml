@@ -99,16 +99,16 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Add your pinterest username eg: webriq", name: "pinterest", widget: "string"}
 
   - name: "filemanager"
-      label: "File Manager"
-      files:
-        - name: "filemanager"
-          label: "File Manager"
-          file: "data/files.json"
-          description: "Add file(image,doc,pdf) here"
-          fields:
-            - label: "File Manager"
-              name: "filemanager"
-              widget: "list"
-              fields:
-                - {label: "File Name", name: "name", widget: "string"}
-                - {label: "File Type", name: "file", widget: "image", media_folder: "assets/files"}
+    label: "File Manager"
+    files:
+      - name: "filemanager"
+        label: "File Manager"
+        file: "data/files.json"
+        description: "Add file(image,doc,pdf) here"
+        fields:
+          - label: "File Manager"
+            name: "filemanager"
+            widget: "list"
+            fields:
+              - {label: "File Name", name: "name", widget: "string"}
+              - {label: "File Type", name: "file", widget: "image", media_folder: "assets/files"}
