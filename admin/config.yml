@@ -1,10 +1,10 @@
 backend:
-  name: netlify-api
+  name: webriq-api
   url: http://localhost:8080
 
 production:
   backend:
-    name: github-api
+    name: webriq-api
     repo: webriq/webriqpage-webriq-template-blog # Updated repo details ### Original: owner/repo # Path to your Github repository
     branch: master # Branch to update (master by default)
 
